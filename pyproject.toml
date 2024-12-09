@@ -1,0 +1,36 @@
+[project]
+name = "tratamento-dados-helpdesk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "streamlit>=1.40.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.2",
+    "taskipy>=1.14.1",
+]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+lint = 'ruff check .; ruff check . --diff'
+format = 'ruff check . --fix; ruff format .'
+run = 'tratamento.py'
+
+
+
