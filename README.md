@@ -72,4 +72,11 @@ uv run task run
 - streamlit
 - openpyxl
 
+## Deploy
+
+O deploy foi feito com a cloud publica do Streamlit, você pode acessar em:
+
+https://tratamentodadoschamados-c3zcni7hrszwrjsc5njhvp.streamlit.app/
+
+
 
